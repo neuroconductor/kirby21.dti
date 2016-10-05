@@ -66,7 +66,6 @@ get_grad_filenames = function(
 }
 
 #' @rdname dti_info
-#' @param ... arguments passed to \code{\link{get_dti_info_filenames}}
 #' @export
 get_b_filenames = function(
   ...){

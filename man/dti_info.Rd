@@ -21,8 +21,6 @@ get_b_filenames(...)
 \item{type}{type of file to obtain (gradient or b-values)}
 
 \item{...}{arguments passed to \code{\link{get_dti_info_filenames}}}
-
-\item{...}{arguments passed to \code{\link{get_dti_info_filenames}}}
 }
 \value{
 Data.frame of filenames
