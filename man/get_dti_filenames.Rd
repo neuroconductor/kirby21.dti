@@ -19,4 +19,3 @@ Return the filenames for the DTI images
 \examples{
 get_dti_filenames()
 }
-
