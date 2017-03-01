@@ -1,14 +1,15 @@
 Package: kirby21.dti
 Type: Package
 Title: Example DTI Data from the Multi-Modal MRI Reproducibility Resource
-Version: 1.5
+Version: 1.5.1
 Date: 2017-02-27
 Author: John Muschelli <muschellij2@gmail.com>
 Maintainer: John Muschelli <muschellij2@gmail.com>
 Description: DTI magnetic resonance imaging ('MRI') data from the 'Kirby21'
-        reproducibility study.
+        reproducibility study
+        <http://dx.doi.org/10.1016/j.neuroimage.2010.11.047>.
 License: GPL-2
-Imports: kirby21.base, kirby21.t1, tools
+Imports: kirby21.base (>= 1.5), kirby21.t1, tools
 RoxygenNote: 6.0.1
 URL: https://www.nitrc.org/projects/multimodal/
 Remotes: muschellij2/kirby21.base,muschellij2/kirby21.t1

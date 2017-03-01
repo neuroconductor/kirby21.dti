@@ -16,6 +16,3 @@ Indicator if the data is downloaded.
 \description{
 Download the files for the DTI images
 }
-\examples{
-download_dti_data()
-}

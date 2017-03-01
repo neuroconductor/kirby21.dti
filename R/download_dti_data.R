@@ -5,10 +5,8 @@
 #' \code{modalities = "DTI"} so it cannot be specified
 #' @return Indicator if the data is downloaded.
 #' 
-#' @examples
-#' download_dti_data()
 #' @export
-#' @importFrom kirby21.base download_kirby21_data
+#' @importFrom kirby21.base download_kirby21_data all_modalities
 download_dti_data =  function(...) {  
   x = kirby21.base::download_kirby21_data(modality = "DTI", ...)
   return(x)
