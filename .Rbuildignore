@@ -3,3 +3,6 @@
 ^\.Rproj\.user$
 inst/visit_*/*
 ^appveyor\.yml$
+^DESCRIPTION\.bak$
+^\./\.travis\.yml\.bak$
+^\./appveyor\.yml\.bak$

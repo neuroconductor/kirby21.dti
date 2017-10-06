@@ -12,6 +12,8 @@ License: GPL-2
 Imports: kirby21.base (>= 1.5), kirby21.t1, tools
 RoxygenNote: 6.0.1
 URL: https://www.nitrc.org/projects/multimodal/
-Remotes: neuroconductor/kirby21.base@1353001747e27b4a3f9f2e0549c605b129417bdb, neuroconductor/kirby21.t1@fb1e10ecfca3f9c9200e792855c04b5c5d0418ba
 biocViews:
-
+Suggests: 
+    covr
+Remotes: neuroconductor/kirby21.base@81b00f2b1982d68f5ab5f6abf39c64e78cab482e,
+    neuroconductor/kirby21.t1@48b6b86fa8e4ac82aa58e74e8e6fc181c0d41315
