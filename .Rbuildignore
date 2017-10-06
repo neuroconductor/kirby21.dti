@@ -1,8 +1,5 @@
 ^\.travis\.yml$
 ^.*\.Rproj$
 ^\.Rproj\.user$
-
+inst/visit_*/*
 ^appveyor\.yml$
-
-
-

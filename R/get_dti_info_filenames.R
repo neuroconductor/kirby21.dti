@@ -11,6 +11,7 @@
 #' @examples
 #' get_dti_info_filenames()
 #' @importFrom kirby21.base get_ids
+#' @importFrom tools file_ext
 #' @export
 get_dti_info_filenames = function(
   ids = kirby21.base::get_ids(), 
@@ -18,7 +19,7 @@ get_dti_info_filenames = function(
   type = c("grad", "b")
 ){
   
-  type = match.arg(type)
+  # type = match.arg(type)
   ##########################################
   # Make the data.frames
   ##########################################
@@ -27,7 +28,8 @@ get_dti_info_filenames = function(
   visits = sprintf("%02.0f", visits)
   v_ids = c(outer(ids, visits, paste, sep = "-"))
   fnames = c(outer(v_ids, modalities, paste, sep = "-"))
-  fnames = paste0(fnames, ".", type)
+  fnames = paste0(fnames, ".")
+  fnames = c(outer(fnames, type, paste, sep = ""))
   
   df = data.frame(fname = fnames, stringsAsFactors = FALSE)
   ss = strsplit(df$fname, "-")
@@ -42,6 +44,7 @@ get_dti_info_filenames = function(
     return(stub)    
   }
   df$modality = nii.stub(sapply(ss, `[`, 3))
+  df$type = tools::file_ext(df$fname)
   df$fname = file.path(paste0("visit_", df$visit), df$id, df$fname)
   df$id = NULL
   ##########################################
