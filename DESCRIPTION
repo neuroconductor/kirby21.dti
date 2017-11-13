@@ -15,5 +15,5 @@ URL: https://www.nitrc.org/projects/multimodal/
 biocViews:
 Suggests: 
     covr
-Remotes: neuroconductor/kirby21.base@16cdee99ec024ca9a87f7e461139b84cb44985f6,
-    neuroconductor/kirby21.t1@6ee34e637411c0ff0c5db23c9241d218cb8eaa20
+Remotes: neuroconductor/kirby21.base@7e6711e2922260b53fae7e294bb55705d4bab05c,
+    neuroconductor/kirby21.t1@3de8cff45c0755c1222c4a2bcf1c651b90688125
