@@ -7,7 +7,7 @@ Author: John Muschelli <muschellij2@gmail.com>
 Maintainer: John Muschelli <muschellij2@gmail.com>
 Description: Diffusion tensor imaging ('DTI') data obtained by magnetic resonance imaging ('MRI') data from the 'Kirby21'
         reproducibility study
-        <http://dx.doi.org/10.1016/j.neuroimage.2010.11.047>.
+        <doi:10.1016/j.neuroimage.2010.11.047>.
 License: GPL-2
 Imports: kirby21.base (>= 1.5), kirby21.t1, tools
 RoxygenNote: 6.0.1

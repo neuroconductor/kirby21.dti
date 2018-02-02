@@ -11,7 +11,7 @@ get_dti_filenames(...)
 \code{modalities = "DTI"} so it cannot be specified}
 }
 \value{
-Vector fo filenames
+Vector of filenames
 }
 \description{
 Return the filenames for the DTI images
