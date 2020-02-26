@@ -30,7 +30,6 @@ env:
   - RGL_USE_NULL=TRUE
   - PROJECT_NAME=neuroconductor
   - DISPLAY=:99.0
-  - secure: Cb6IheysT4arA7HEtTB3sTWDcUCkEoSNnXkGVKMWjbazHIffbI7RJ6V+A4PXdTXLsOKA3vc4fIT30rUYVunyc+Zxq0bYGnsCmOKUUMVHdb7YRzMTrofs1GIpquymPy6dckbddR1ahR+DOtizmUm2nq8MzyXdQyR/Ft0pcFJyPIdd//IYHbYMP0eR+L5eNq6Ttg3Qd4EKgebzQc3PbP5tIeqmPv5AQknD9EjTbCiHZpk7UXtgC4epwDfSjkj3dQXiq99Ipo4k7syy/+s+bCun4YsI8AaNonz0383PK7BMO85QmZyKeT/JJckhmILMUPbiuShwDSnYLACYJXRURO502Gm+SAgTzKEtUVJk1w7jUtb0RzLxybmnp0hZ6G2e3Htqu/D/0o4/4bJKiNPjnStTeUzktCINFRFNHUa12J4HqKpqfTe9yQJ5j5lW27/Op17JxhF48ah3S//Ju4/pggnvL17uLzRoCCaFd3QWRPkEpNIOlY7B9IaSEPZ5lI+vWtJcCjke76cVGcRmi06jLCUh2CaKxkBax+d1nPr2porR6fDyofuVZorcXchmDoUmtoKTQG9cXzMcHh1WYuA0i5/Ff0ASq03gxtM3rKqtU2ehaebzOovUGJ/aFELeJvqAZ8JIqwhClro9RPyDj13vIbXctH3ob8Ap6+uaVfPdaXdu7K0=
 r_check_args: "--as-cran --install-args=--build"
 before_install:
 - ulimit -n 2048
@@ -78,7 +77,7 @@ deploy:
   on:
     tags: true
   api-key:
-    secure: JU2XBAh/8crMb1PS8o+TbGkvPatrdB7Qu9pDcM0TVr5LxRLbIYa2uqBNCP/L8X4zXvL/ZdZRkRwD9ElDINqDGYhYpdNVR/1y7ifETIjkj9QtXg7StWCqMeIV99Eog6gaSwP44QiPtDPb/8vOiUbmRZDkaE46RaTlhx2+6+WgIw9gKzU9kLcQybiRFWXMdQ7il1s7jhALIEBrGOvCcCxBGXvfEqsmUNtQtIbgPqwAcJ+6JHic9sQg6OuY5GjdEIbF4z7QlsWj+km2An49VnwnGtPBFZeb16Od3yaoHt4kc2cd88ZpfQ1h9th7vEUy7W1XlFCe+GmIJJWQGNpYHU83GiaxRWgUGarKlJaauyoM8IqQxSuPNmmn/EjDVSYm5ogSsb8gTL9oynPY1hxCUj+VeNnsAfsOl8cESXjbwcV35mR4aNwuM5IrXHH0/RnI3/iZ9PQu09r3ncJ2Az2Jh+cRH4YZqvhUvOPTadxex05mPMtqgk0D12uSA+fvufp7Uw+k8OJCqUrRdAJraCQ7SJLVOxlREH/zp9MN+SQAWtMn77v41jmxE8APmFIvMPwwCb+5b8k8qHsl3Ro8mc3M9jK+4fY/EdusfEIPMCQLWPOp7IiacaHnjLzOAmvWW32Fxdi6pOGmlgl+VqCSU+YECek8yqtg1On+gN85FAQc+yw+vZg=
+    secure: f5Z0ivR4jmOsEDocPgmdn+KU77UvkDTksRTts6f3JDhmhhW1OAUwAoob8Q0ThmqAxzrsij0K3cmTaezYjAeXGnQzskG2ZG0ysPJOkMWE2v1vVHox/5thNnyGZeojO6HzTjBoSgeaN1ofZh048n9W5r/UTN3Kaeboe650r4AIDfHNXfpXzgdBHuf4iehz82KIesgkfLUWawDndd20SA+x4bu4N60Mg93+NUtrE/Wa1u7EDIeGxSu1wfSB54uxooTDatC1NCylthdfNxXMfc6yGdJJLTWUOMnEY8mQ8bEYDhUiqX2J0gbEqjba08jArj3jYgGQZAVRMPF0mi3SqDdOLUxGf0+efhfxF0xfkx0cpcnjjX/Cu0+ZFyJeX+vss7j0EAUwNzViW1AJ15z1nsZliZ2JjSk559Ly5YhTLzeW780yXPaOu1aAoZw474A3f7v2lJ47HRQ6jvVQa++Kzqtd+sAl4XJRj9lwJazx7aUOv7RHMgKGBh/zFXT4LG53UPZH15lK8O6C5wQ2GRAAagchoyEOtfC/fzuMbRRHQgBcHFI+osheWeWoBREp79H/V8rdrK/dpvG4Lo8r6ZSlWvYtOphe7mTlfifasaZPe3NUjhLoU68MCZaX1gKd9SMTe7GAXMuGcgci+kmpUDK2hNfJF0DkOQsfvuuSUS+SPCBQnrs=
 after_deploy:
 - if [[ "${TRAVIS_OS_NAME}" == "linux" && ${TRAVIS_R_VERSION_STRING} = "release" ]];
   then echo 'covr::coveralls(type = "all", quiet = FALSE)' > neuroc_covr.R ; travis_wait
