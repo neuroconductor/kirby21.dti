@@ -18,5 +18,5 @@ Suggests: covr, testthat
 biocViews:
 Repository: Neuroconductor
 Remotes: 
-    neuroconductor/kirby21.base@01c925d0baff0f61164ce95ad53d7bb352b1c09d,
+    neuroconductor/kirby21.base@d5ad4a56112cc1340fc897d50ccdb2f498d30a6a,
     neuroconductor/kirby21.t1@694170dd2a9d965cc5c35a05349da2b8de6beb94
